@@ -300,6 +300,7 @@ if st.session_state.current_page == "Загрузка данных":
                 st.success("✅ Пропущенных значений не обнаружено!")
             else:
                 st.dataframe(missing[missing > 0], use_container_width=True)
+
         
         with tab3:
             st.write("**Распределение данных**")
